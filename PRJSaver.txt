@@ -1,0 +1,93 @@
+-------------------------------------------------------------------
+ABOUT
+
+  PRJSaver  Copyright (c) Nick Richards  ncr100@yahoo.com  Dec 2001 
+  All Rights Reserved
+
+  "It's so high tech it deserves a patent!" -Anonymous
+  "w00t!" -Anonymous
+
+  Meant to back up Hash AnimationMaster project files.
+-------------------------------------------------------------------
+
+INTRODUCTION
+
+I wrote this program because I got real tired of
+Hash:AnimationMaster's crashing and trashing my 3D projects.  
+
+We users of Hash:AM put lots of time and effort into our projects, and
+for our tool to simply explode and take out our work is nightmarishly
+sinister, ironic, and just plain frustrating.  But it happens with
+even the best of programs, so here's where little scrappy tools like
+this one can help us all out.
+
+It's written in Tcl.  Tcl is a nifty "glue" language commonly used for
+basic file-processing, and simple GUI applications.  You can browse
+the source code and pretty much pick up what is going on inside, it's
+a pretty short script.
+
+If you like it, it would make my day if you sent me an email at
+ncr100@yahoo.com.  Tell me that it works perfectly too, btw.  That
+really would make my day.
+
+-------------------------------------------------------------------
+
+MICROSOFT WINDOWS
+
+Use the pre-packaged executable PRJSaver.exe.
+
+
+APPLE MACINTOSH
+
+Use the raw script, plus a Tcl interpreter.  Macintosh has not been
+tested, though it should work fine.  Let me know about your success 
+ncr100@yahoo.com.
+
+Downloading a Tcl interpreter (Mac): 
+
+If you don't have MS Windoze, see http://tcl.activestate.com for more
+information about an available TCL/TK interpreter.  
+
+Quick Links (as of Dec 9, 2001): 
+http://prdownloads.sourceforge.net/tcl/TclTk_8.3.4_WebInstall.bin
+http://prdownloads.sourceforge.net/tcl/TclTk_8.3.4_RuntimeInstall.bin
+
+-------------------------------------------------------------------
+
+INSTALLING AND RUNNING
+
+MICROSOFT WINDOWS
+* Copy PRJSaver anywhere and double click.
+* See "ALL" instructions below.
+
+APPLE MACINTOSH
+* Copy PRJSaver anywhere.
+* Install Tcl/Tk interpreter (need its "WISH" program especially).
+* ???? Double click PRJSaver.prj to run the raw script through WISH.
+* See "ALL" instructions below.
+* IF this doesn't work, you'll have to "source prjsaver.prj" from
+  WISH, :( .  I may be able to help you figure out better instructions
+  for this if you Macs email me directly.
+
+ALL
+* Click the Browse... button and pick the file you want backed up.  
+* Now click the big "Backup" button at the bottom of the screen.
+* Every 15 seconds the program will check to see if the project file
+  has been updated via the file's modification timestamp.  If this 
+  is newer than the last one PRJSaver saw, it will make a backup.
+* Backups are labeled Project_[num].prj so  
+   Project1.prj
+  becomes
+   Project1_0.prj
+   Project1_1.prj
+   Project1_2.prj
+   ...
+
+-------------------------------------------------------------------
+
+WARRANTY AND DISCLAIMER
+
+This program is provided as-is, and with no warranty.  This program is not
+guaranteed to be safe to run on any computer.  This program may destroy 
+your files.
+
